@@ -37,3 +37,31 @@ if is_friend and is_user:
 
 #  Contrastingly, when used 'AND' operator if first operator is False, it returns 'False' without checking second operand
 
+# Logical Operator #
+
+is_magician = True
+is_expert = False
+
+if is_expert and is_magician: 
+    print("You're a master magician")
+elif is_magician and not is_expert:
+    print("at least you're getting there")
+elif not is_magician:
+    print("You need magic powers")
+
+# print(bool(0))
+
+print(True == 1) #True
+print('' == 1) #False
+print([] == 1) #False
+print(10 == 10.0) #True
+print([] == []) #True
+
+print(True is 1) # False
+print([1,2,3] is [1,2,3]) #False #allocated different location
+print([] is []) # False #allocated different location
+
+print(True is True) # True
+print('1' is '1') #True
+
+
