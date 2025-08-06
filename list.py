@@ -15,16 +15,36 @@ print(my_list[1])
 print(my_list[-3])
 print(len(my_list))
 
-# Slicing
+# Slicing #
 # new copy of list is created
 # [startIndex : endIndex(excluded)]
 print(my_list[0:3])
 sliced_list = my_list[0:4]
 print(sliced_list)
 
+## wrong way of adding elements in list using slicing##
+# my_list[1:2] = 'Gagan'  
+# print(my_list) # [10, 'G','a','g','a','n', 'Hello', 3.14, True]
+
+# Correct way of adding elements in list using slicing
+# We can replace a slice of the list with another list or a single element wrapped in a list.
+# This will replace the elements at index 1 with 'Gagan'
+my_list[1:2] = ['Gagan']
+print(my_list) # [10, 'Gagan', 'Hello', 3.14, True]
+
 # assigning - does not create a new copy of the list. 
 # It only creates a new reference (alias) to the same list object in memory.
 new_list = my_list 
+
+# if you want to create a new copy, you can ustilize copy() method
+# new_list = my_list.copy()
+# or use slicing
+# new_list = my_list[:]
+
+my_list_copy = my_list.copy()
+my_list.append('Python')
+print(my_list) # [10, 'Gagan', 'Hello', 3.14, True, 'Python']
+print(my_list_copy, 'list copy') #[10, 'Gagan', 'Hello', 3.14, True]
 
 new_list[0] = 'Ball'
 print(new_list) # ['Ball', 20, 'Hello', 3.14, True]

@@ -65,3 +65,10 @@ print(True is True) # True
 print('1' is '1') #True
 
 
+# powered_num 
+
+squared_num = [num**2 for num in range(11)]
+print(squared_num) # [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+cubed_num = [num**3 for num in range(11)]
+print(cubed_num) # [0, 1, 8, 27, 64, 125, 216, 343, 512, 729, 1000]

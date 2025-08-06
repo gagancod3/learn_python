@@ -16,8 +16,28 @@ dict_one = {
 print(dict_one['key1']) # [1, 2, 3]
 print(dict_one['key1'][2]) # 3
 
-# Unlike lists where we can have array of objects
+print(dict_one.get('b')) # hey there
 
+# default to iterate over keys
+for i in dict_one: 
+    print(i)    # key1, b, c
+
+# explicitly iterate over keys
+for i in dict_one.keys(): 
+    print(i)    # key1, b, c
+
+# explicitly iterate over values
+for i in dict_one.values():
+    print(i) # [1, 2, 3], hey there, True
+
+# accessing key and value pairs with items()
+for i, j in dict_one.items():
+    print(i,":", j) # key1 [1, 2, 3], b hey there, c True
+
+
+
+# here we can have array of objects
+# where each object can have different keys and values
 my_list =  [{
     'key1': [1,2,3],
     'b': 'hey there',
@@ -77,3 +97,26 @@ print(dict_three.update({'role':'developer'}))
 print(dict_three) 
 # {'name': 'John', 'city': 'Mumbai', 'role': 'developer'}
 
+
+chai_types = {
+    'masala': 'spicy', 'Green': 'healthy', 'Lemon': 'refreshing'}
+print(chai_types)
+
+chai_types.update({'Ginger': 'strong'})
+print(chai_types)
+
+chai_types.pop('masala')
+print(chai_types) # {'Green': 'healthy', 'Lemon': 'refreshing', 'Ginger': 'strong'}
+
+# Nested Dictionary
+tea_types = { 'chai': {'masala': 'spicy', 'Green': 'healthy', 'Lemon': 'refreshing'},
+              'tea': {'black': 'bitter', 'green': 'light', 'herbal': 'calming'}}
+
+print(tea_types)
+
+square_num = {x: x**2 for x in range(5)}
+print(square_num) # {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
+
+# empty square_num
+square_num.clear()
+print(square_num) # {}
