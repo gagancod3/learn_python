@@ -19,7 +19,7 @@ def greet(name,greeting="Hello",profession='Programmer'):
     # return f"{greeting}, {name}!"
 
 # calling the decorator 'debug' function
-debug(greet('Gagan',greeting='Hanji', profession='software engineer'))
+greet('Gagan',greeting='Hanji', profession='software engineer')
 
 # decorator acts as a toll check where a function goes thorugh the decorator function to be executed.
 

@@ -1,3 +1,20 @@
+# Basic syntax of a decorator function
+
+def decorator_fn(func):
+    def wrapper(*args, **kwargs):
+        res = func(*args)
+        return res
+    return wrapper
+
+@decorator_fn
+def fn(x):
+    print(f'value is {x}')
+
+fn(2)
+
+
+
+
 # Timing function execution
 # Write a decorator that measures and prints the execution time of a function.
 
