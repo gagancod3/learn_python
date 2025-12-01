@@ -3,7 +3,9 @@
 # Set #
 
 # CHARACTERISTICS #
-# Unordered, Mutable (changeable), and unindexed (unlike arrays/list) collection of unique elements (no duplicates)
+# Unordered
+# Mutable (changeable)
+# Unindexed (unlike arrays/list)
 # No duplicate values.
 # No indexing or slicing.
 # Elements must be immutable (e.g., numbers, strings, tuples).

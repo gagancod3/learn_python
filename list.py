@@ -2,12 +2,12 @@
 # List #
 
 # A list in Python is an ordered, mutable (changeable) collection that can contain elements of different data types.
-## CHARACTERISTICS ##
-# Ordered: Elements have a defined order.
-# Mutable: Elements can be modified.
-# Heterogeneous: Supports mixed data types.
-# Indexed: Supports positive and negative indexing.
-# Allow Duplicates - Since lists are indexed, lists can have items with the same value
+##! CHARACTERISTICS ##
+# *Ordered: Elements have a defined order.
+# *Mutable: Elements can be modified.
+# *Heterogeneous: Supports mixed data types.
+# *Indexed: Supports positive and negative indexing.
+# *Allow Duplicates - Since lists are indexed, lists can have items with the same value
 
 my_list = [10, 20, "Hello", 3.14, True]
 
@@ -15,9 +15,9 @@ print(my_list[1])
 print(my_list[-3])
 print(len(my_list))
 
-# Slicing #
+#! Slicing #
 # new copy of list is created
-# [startIndex : endIndex(excluded)]
+# *[startIndex : endIndex(excluded)]
 print(my_list[0:3])
 sliced_list = my_list[0:4]
 print(sliced_list)
@@ -26,17 +26,19 @@ print(sliced_list)
 # my_list[1:2] = 'Gagan'  
 # print(my_list) # [10, 'G','a','g','a','n', 'Hello', 3.14, True]
 
-# Correct way of adding elements in list using slicing
+# *Correct way of adding elements in list using slicing
 # We can replace a slice of the list with another list or a single element wrapped in a list.
 # This will replace the elements at index 1 with 'Gagan'
+
 my_list[1:2] = ['Gagan']
+
 print(my_list) # [10, 'Gagan', 'Hello', 3.14, True]
 
-# assigning - does not create a new copy of the list. 
+#* Assigning - Does not create a new copy of the list. 
 # It only creates a new reference (alias) to the same list object in memory.
 new_list = my_list 
 
-# if you want to create a new copy, you can ustilize copy() method
+#* If you want to create a new copy, you can ustilize copy() method
 # new_list = my_list.copy()
 # or use slicing
 # new_list = my_list[:]
@@ -55,16 +57,16 @@ print(my_list) # ['Ball', 20, 'Hello', 3.14, True]
 # when it's assigned with 'my_list'
 
 
-# Matrix
+#* Matrix
 matrix = [[1,0,1],[0,1,0],[1,0,1]]
 print(matrix[0][2]) # 1
 
-# Methods
+# !Methods
 
 # Length
 print(len(my_list))
 
-# append
+# Append
 my_list.append(100)
 my_list.append('Ball')
 print(my_list) # ['Ball', 20, 'Hello', 3.14, True, 100, 'Ball']
@@ -76,6 +78,7 @@ print(my_list) #[20, 'Hello', 3.14, True, 100, 'Ball']
 
 # pop()
 # pop() - default Index is '-1' but we can specify the index as well
+
 my_list.pop()
 my_list.pop(2)
 print(my_list) # [20, Hello, True, 100]
