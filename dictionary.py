@@ -3,7 +3,7 @@
 
 # CHARACTERISTICS
 
-# Keys are unique and immutable (strings, numbers, tuples).
+# 'Keys' are Unique and Immutable (strings, numbers, tuples).
 # Values can be of any data type.
 # Accessed using keys, not indexes. (No arrays)
 
@@ -16,9 +16,12 @@ dict_one = {
 print(dict_one['key1']) # [1, 2, 3]
 print(dict_one['key1'][2]) # 3
 
+print(dict_one['b']) # hey there
 print(dict_one.get('b')) # hey there
 
-# default to iterate over keys
+print('key1' in dict_one) # True
+
+# Default to iterate over 'keys'
 for i in dict_one: 
     print(i)    # key1, b, c
 
