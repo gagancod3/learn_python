@@ -14,12 +14,13 @@ def f1():
 
 
 # we can declare the function call to a variable anywhere down the code
+# We can declare the function call of 'f1' to a variable 'res' anywhere down the code
+# What we see is that we're able to get the 'f2()' definition as well as the 
+#* Lexical environment of f2() as it is able to access the 'x = 20' (variable of f1)
+#* This is closures in Python
+
 res = f1()
 res()
-# What we see is that we're able to get the f2() definition as well as the 
-# lexical environment of it as it accesses the 'x = 20' 
-# This is 'closures' in Python
-
 
 
 '''
